@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Mascota</title>
+  <link rel="stylesheet" href="/inf 113/formulario mascota/estilo/style.css">
+</head>
+<body>
+
+  <main class="contenedor-formulario">
+    <section class="formulario">
+      <h2>Registro de Mascota</h2>
+      <form action="#" method="post">
+
+        <label for="propietario">Nombre del propietario:</label>
+        <input type="text" id="propietario" name="propietario" required>
+
+        <label for="nombreMascota">Nombre de la mascota:</label>
+        <input type="text" id="nombreMascota" name="nombreMascota" required>
+
+        <label for="especie">Especie:</label>
+        <select id="especie" name="especie" required>
+          <option value="" disabled selected>Seleccione una especie</option>
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="ave">Ave</option>
+          <option value="roedor">Roedor</option>
+          <option value="reptil">Reptil</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="raza">Raza:</label>
+        <input type="text" id="raza" name="raza" required>
+
+        <label>Género:</label>
+        <div class="genero">
+          <input type="radio" id="macho" name="genero" value="macho" required>
+          <label for="macho">Macho</label>
+
+          <input type="radio" id="hembra" name="genero" value="hembra" required>
+          <label for="hembra">Hembra</label>
+        </div>
+
+        <label for="edad">Edad (en años):</label>
+        <input type="number" id="edad" name="edad" min="0" required>
+
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones" rows="4" placeholder="Condiciones médicas, comportamiento, etc."></textarea>
+
+        <button type="submit">Registrar Mascota</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
